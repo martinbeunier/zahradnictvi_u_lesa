@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang='cs'>
+  <head>
+    <title></title>
+    <meta charset='utf-8'>
+    <meta name='description' content=''>
+    <meta name='keywords' content=''>
+    <meta name='author' content=''>
+    <meta name='robots' content='all'>
+    <!-- <meta http-equiv='X-UA-Compatible' content='IE=edge'> -->
+    <link href='/favicon.png' rel='shortcut icon' type='image/png'>
+    
+    <style>
+.item1 { grid-area: header; }
+.item2 { grid-area: fotos1; }
+.item3 { grid-area: fotos2; }
+.item4 { grid-area: fotos3; }
+.item5 { grid-area: fotos4; }
+.item6 { grid-area: fotos5; }
+
+.item7 { grid-area: fotos6; }
+.item8 { grid-area: fotos7; }
+.item9 { grid-area: fotos8; }
+.item10 { grid-area: fotos9; }
+.item11 { grid-area: fotos10; }
+
+.item12 { grid-area: fotos11; }
+.item13 { grid-area: fotos12; }
+.item14 { grid-area: fotos13; }
+.item15 { grid-area: fotos14; }
+.item16 { grid-area: fotos15; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header '
+    'fotos1 fotos2 fotos3 fotos4 fotos5 '
+    'fotos6 fotos7 fotos8 fotos9 fotos10 ' 
+    'fotos11 fotos12 fotos13 fotos14 fotos15 ';
+  gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+</style>
+  </head>
+  <body>
+<h1>A five Items Grid Layout</h1>
+
+
+
+<div class="grid-container">
+  <div class="item1"><h1 align:left>Fotogalerie</h1><br><h2>Zahradnictví U lesa</h2><img src="pozadi.jpg"></div>
+  <div class="item2"><img src="foto1.jpeg" style="weight:300px;height:300px"></div>
+  <div class="item3"><img src="foto2.jpg" style="weight:300px;height:300px" ></div>  
+  <div class="item4"><img src="foto3.jpg" style="weight:300px;height:300px" ></div>
+  <div class="item5"><img src="foto4.jpg" style="weight:300px;height:300px" ></div>
+  <div class="item6"><img src="foto5.jpeg" style="weight:300px;height:300px" ></div>
+   
+  <div class="item7"><img src="foto1.jpeg" style="weight:300px;height:300px" ></div>
+  <div class="item8"><img src="foto2.jpg" style="weight:300px;height:300px" ></div>  
+  <div class="item9"><img src="foto3.jpg" style="weight:300px;height:300px" ></div>
+  <div class="item10"><img src="foto4.jpg" style="weight:300px;height:300px" ></div>
+  <div class="item11"><img src="foto5.jpeg" style="weight:300px;height:300px" ></div>
+   
+
+  <div class="item12"><img src="foto1.jpeg" style="weight:300px;height:300px" ></div>
+  <div class="item13"><img src="foto2.jpg" style="weight:300px;height:300px" ></div>  
+  <div class="item14"><img src="foto3.jpg" style="weight:300px;height:300px" ></div>
+  <div class="item15"><img src="foto4.jpg" style="weight:300px;height:300px" ></div>
+  <div class="item16"><img src="foto5.jpeg" style="weight:300px;height:300px" ></div>
+</div>
+
+  </body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang='cs'>
+  <head>
+    <title></title>
+    <meta charset='utf-8'>
+    <meta name='description' content=''>
+    <meta name='keywords' content=''>
+    <meta name='author' content=''>
+    <meta name='robots' content='all'>
+    <!-- <meta http-equiv='X-UA-Compatible' content='IE=edge'> -->
+    <link href='/favicon.png' rel='shortcut icon' type='image/png'>
+    
+    <style>
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu menu main main main main '
+    'right right right right right right ' ;
+  gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+</style>
+  </head>
+  <body>
+<h1>A five Items Grid Layout</h1>
+
+
+
+<div class="grid-container">
+  <div class="item1"><p><br>Nadpis<br> </p></div>
+  <div class="item2"><p>Menu<br><br><br></p></div>
+  <div class="item3"><p><br>obsah<br></p></div>  
+  <div class="item4">patièka</div>
+ 
+</div>
+
+  </body>
+</html>
