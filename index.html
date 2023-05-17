@@ -11,9 +11,6 @@
     <link href="/favicon.png" rel="shortcut icon" type="image/png" />
 
     <style>
-      .item1 {
-        grid-area: hlava;
-      }
       .item2 {
         grid-area: levo;
       }
@@ -26,17 +23,12 @@
       .item5 {
         grid-area: kotnik;
       }
-      .item6 {
-        grid-area: pata;
-      }
 
       .grid-container {
         display: grid;
         grid-template-areas:
-          "hlava hlava hlava hlava hlava hlava hlava"
           "levo stred stred stred stred pravo pravo "
-          "kotnik kotnik kotnik kotnik kotnik kotnik kotnik "
-          "pata pata pata pata pata pata pata";
+          "kotnik kotnik kotnik kotnik kotnik kotnik kotnik ";
         gap: 10px;
         background-color: white;
         padding: 10px;
@@ -52,71 +44,22 @@
     <link rel="stylesheet" type="text/css" href="index.css" />
   </head>
   <body>
+    <div style="background-image: url('fotky/pozadi.jpg'); font-size: 35px">
+      <h1 style="text-align: left">Zahradnictví U lesa</h1>
+      <br />
+      <h2 style="text-align: left; color: yellow; font-size: 30px">
+        <i> Pomaháme vaším zahradám růst už od roku 1975 </i>
+      </h2>
+    </div>
     <div class="grid-container">
-      <div class="item1" style="background-image: url('fotky/pozadi.jpg')">
-        <h1 style="text-align: left">Zahradnictví U lesa</h1>
-        <br />
-        <h2 style="text-align: left; color: yellow">
-          Pomaháme vaším zahradám růst už od roku 1975
-        </h2>
-      </div>
       <div class="item2">
         <p>
-          <br /><br /><button
-            type="button"
-            style="
-              background-color: green;
-              color: white;
-              border-radius: 10px;
-              width: 100px;
-              height: 30px;
-              margin: 10px;
-            "
-          >
-            Úvod
-          </button>
+          <br /><br /><button type="button">Úvod</button>
           <a href="fotogalerie.html">
-            <button
-              type="button"
-              style="
-                background-color: green;
-                color: white;
-                border-radius: 10px;
-                width: 100px;
-                height: 30px;
-                margin: 10px;
-              "
-            >
-              Tipy a triky
-            </button>
+            <button type="button">Tipy a triky</button>
           </a>
-          <button
-            type="button"
-            style="
-              background-color: green;
-              color: white;
-              border-radius: 10px;
-              width: 100px;
-              height: 50px;
-              margin: 10px;
-            "
-          >
-            Řešení problémů
-          </button>
-          <button
-            type="button"
-            style="
-              background-color: green;
-              color: white;
-              border-radius: 10px;
-              width: 100px;
-              height: 30px;
-              margin: 10px;
-            "
-          >
-            Produkty
-          </button>
-          <br />
+          <button type="button">Řešení problémů</button>
+          <button type="button">Produkty</button>
         </p>
       </div>
       <div class="item3" style="text-align: left">
@@ -148,16 +91,13 @@
         <a href style="margin-right: 30px">Řešení problémů </a>
         <a href style="margin-right: 30px">Produkty </a>
       </div>
-
-      <div class="item6" style="text-align: left">
-        <p>
-          Copyright © 2022 Zahradnictví U lesa <sup>TM</sup> <br />
-          Bez předchozího písemného souhlasu je kopírování těchto materiálů
-          zakázáno
-          <br />
-          <a href>Kontaktujte webmastera</a>
-        </p>
-      </div>
     </div>
+
+    <p class="pata">
+      Copyright © 2022 Zahradnictví U lesa <sup>TM</sup> <br />
+      Bez předchozího písemného souhlasu je kopírování těchto materiálů zakázáno
+      <br />
+      <a href>Kontaktujte webmastera</a>
+    </p>
   </body>
 </html>
